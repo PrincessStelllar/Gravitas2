@@ -2846,7 +2846,7 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
 
     event.recipes.gtceu
     .assembler("gregitas:quadrocopter")
-    .itemInputs("4x gtceu:lv_electric_motor", "8x minecraft:bamboo", "4x create:propeller", "4x minecraft:redstone_comparator")
+    .itemInputs("4x gtceu:lv_electric_motor", "8x minecraft:bamboo", "4x create:propeller", "4x minecraft:comparator")
     .inputFluids(Fluid.of("gtceu:soldering_alloy", 1000))
     .itemOutputs("immersive_aircraft:quadrocopter")
     .duration(420)
