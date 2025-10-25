@@ -614,7 +614,7 @@ let createAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
         event.recipes.create.deploying(
             [
                 resultItem,
-                resultMold,
+                Item.of(moldItem)
             ],
             [
                 {

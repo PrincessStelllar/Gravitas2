@@ -617,4 +617,10 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "minecraft:crossbow" })
   event.remove({ id: "headlight:headlight"})
   event.remove({ id: "buildinggadgets2:gadget_cut_paste"})
+  event.remove({ id: "scguns:create/recycling/callwell_conversion_recycling"})
+  event.remove({ id: "scguns:create/mechanical_crafting/prima_materia"})
+  event.remove({ id: "scguns:anthralite/anthralite_knife_smithing"})
+  event.remove({ id: "gtceu:bender/bend_magnetic_iron_plate_to_foil"})
+  event.remove({ id: "gtceu:bender/bend_magnetic_iron_ingot_to_foil"})
+
 }
