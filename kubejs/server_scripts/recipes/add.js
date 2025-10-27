@@ -2700,6 +2700,18 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
   event.recipes.create.emptying(["minecraft:glass_bottle", Fluid.of("enderio:xp_juice", 250)], "minecraft:experience_bottle")
     .id("gregitas:emptying/experience_bottle")
 
+  // create centrifuge rubber
+  event.recipes.vintage.centrifugation(
+	[
+		Item.of("gtceu:sticky_resin", 1).withChance(0.35), 
+		Item.of("gtceu:wood_dust", 1).withChance(0.1), 
+		Item.of("gtceu:carbon_dust", 1).withChance(0.05)
+	], 
+	"tfc:wood/log/kapok",
+	200, // processing time
+	128 // minimum RPM
+  )
+
   event.recipes.gtceu.canner("gregitas:experience_bottle_drain")
     .itemInputs("minecraft:experience_bottle")
     .itemOutputs("minecraft:glass_bottle")
