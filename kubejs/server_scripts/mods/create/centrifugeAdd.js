@@ -9,7 +9,19 @@ let centrifugeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     
     // Progression-relevant recipes that we don't want to make available too early
     const id_blacklist = ['gtceu:centrifuge/rubber_log_separation', 'gtceu:centrifuge/sticky_resin_separation']
-    
+	
+	// nerfed version of the sticky resin recipe to allow easier processing a bit earlier
+    event.recipes.vintage.centrifugation(
+	  [
+		  Item.of("gtceu:sticky_resin", 1).withChance(0.35), 
+		  Item.of("gtceu:wood_dust", 1).withChance(0.1), 
+		  Item.of("gtceu:carbon_dust", 1).withChance(0.05)
+	  ], 
+	  "tfc:wood/log/kapok",
+	  200, // processing time
+	  128 // minimum RPM
+    )
+
     // Vintage Improvements centrifuge has no lid - all gas outputs will be lost
     const gas_blacklist = ['gtceu:methane', 'gtceu:oxygen', 'gtceu:hydrogen', 'gtceu:lpg', 'gtceu:helium']
     
