@@ -20,7 +20,7 @@
         "count": 1
     },
     "base_drop": {
-        "item": "minecraft:stick",
+        "item": "minecraft:bone",
         "count": 1
     },
     "trivia": "hostilenetworks.trivia.dread_knight",
@@ -31,7 +31,7 @@
         },
         {
             "item": "minecraft:bone",
-            "count": 1
+            "count": 4
         }
     ]
 }

@@ -20,8 +20,8 @@
         "count": 1
     },
     "base_drop": {
-        "item": "minecraft:stick",
-        "count": 1
+        "item": "gtceu:damascus_steel_nugget",
+        "count": 5
     },
     "trivia": "hostilenetworks.trivia.troll",
     "fabricator_drops": [

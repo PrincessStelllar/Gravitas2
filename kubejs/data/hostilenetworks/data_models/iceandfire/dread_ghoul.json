@@ -20,15 +20,14 @@
         "count": 1
     },
     "base_drop": {
-        "item": "minecraft:stick",
+        "item": "minecraft:rotten_flesh",
         "count": 1
     },
     "trivia": "hostilenetworks.trivia.dread_ghoul",
     "fabricator_drops": [
         {
             "item": "minecraft:rotten_flesh",
-            "count": 1,
-            "cap_nbt": "{\"tfc:food\":{creationDate:378000L,traits:[]}}"
+            "count": 6
         },
         {
             "item": "iceandfire:dread_shard",
@@ -36,7 +35,7 @@
         },
         {
             "item": "minecraft:bone",
-            "count": 1
+            "count": 4
         }
     ]
 }
