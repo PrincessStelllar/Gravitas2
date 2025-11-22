@@ -2719,7 +2719,21 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
     B: "#gtceu:batteries/hv",
     T: "gtceu:transistor"
   })
+
+  event.recipes.gtceu.assembler("gregitas:prediction_matrix_low")
+    .itemInputs("4x gtceu:glass_tube")
+    .inputFluids(Fluid.of("gtceu:aluminium", 288))
+    .itemOutputs("4x hostilenetworks:prediction_matrix")
+    .duration(120)
+    .EUt(64)
   
+  event.recipes.gtceu.assembler("gregitas:prediction_matrix_high")
+    .itemInputs("4x gtceu:glass_tube")
+    .inputFluids(Fluid.of("gtceu:blue_steel", 144))
+    .itemOutputs("32x hostilenetworks:prediction_matrix")
+    .duration(240)
+    .EUt(HV)
+
   event.recipes.gtceu.circuit_assembler("gregitas:blank_data_model")
     .itemInputs("2x gtceu:ram_chip", "2x gtceu:ilc_chip", "#gtceu:circuits/mv", "gtceu:stainless_steel_plate", "gtceu:resin_printed_circuit_board")
     .inputFluids(Fluid.of("gtceu:soldering_alloy", 144))

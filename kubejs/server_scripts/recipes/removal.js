@@ -88,6 +88,7 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "hostilenetworks:loot_fabricator"})
   event.remove({ id: "hostilenetworks:deep_learner"})
   event.remove({ id: "hostilenetworks:framework" })
+  event.remove({ id: "hostilenetworks:prediction_matrix"})
 
   event.remove({ input: "hostilenetworks:overworld_prediction"})
   event.remove({ input: "hostilenetworks:nether_prediction"})
