@@ -1,0 +1,38 @@
+{
+    "conditions": [
+        {
+            "modid": "scguns",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "scguns:dissident",
+    "variants": [],
+    "name": "entity.scguns.dissident",
+    "name_color": "#898183",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 2048,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:rotten_flesh",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.dissident",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 4
+        },
+        {
+            "item": "scguns:brass_mask",
+            "count": 1,
+            "nbt": "{Damage:79,affix_data:{affixes:{\"apotheosis:armor/attribute/blessed\":0.53321916f},name:\u0027{\"color\":\"#808080\",\"translate\":\"misc.apotheosis.affix_name.two\",\"with\":[{\"translate\":\"affix.apotheosis:armor/attribute/blessed\"},\"\",\"\"]}\u0027,rarity:\"apotheosis:common\"}}"
+        }
+    ]
+}

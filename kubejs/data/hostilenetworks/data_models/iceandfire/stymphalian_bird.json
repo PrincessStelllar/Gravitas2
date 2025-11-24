@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:stymphalian_bird",
+    "variants": [],
+    "name": "entity.iceandfire.stymphalian_bird",
+    "name_color": "#059432",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 2048,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "gtceu:copper_nugget",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.stymphalian_bird",
+    "fabricator_drops": [
+        {
+            "item": "iceandfire:stymphalian_skull",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:stymphalian_bird_feather",
+            "count": 1
+        },
+        {
+            "item": "gtceu:copper_nugget",
+            "count": 4
+        }
+    ]
+}

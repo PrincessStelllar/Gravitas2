@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "modid": "scguns",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "scguns:hornlin",
+    "variants": [],
+    "name": "entity.scguns.hornlin",
+    "name_color": "#E2D740",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:gold_nugget",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.hornlin",
+    "fabricator_drops": [
+        {
+            "item": "scguns:sheol",
+            "count": 2
+        },
+        {
+            "item": "scguns:hog_round",
+            "count": 4
+        },
+        {
+            "item": "minecraft:gold_nugget",
+            "count": 6
+        }
+    ]
+}

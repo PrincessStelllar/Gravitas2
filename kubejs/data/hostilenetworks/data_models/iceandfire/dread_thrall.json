@@ -1,0 +1,37 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:dread_thrall",
+    "variants": [],
+    "name": "entity.iceandfire.dread_thrall",
+    "name_color": "#05F420",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:bone",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.dread_thrall",
+    "fabricator_drops": [
+        {
+            "item": "iceandfire:dread_shard",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 4
+        }
+    ]
+}

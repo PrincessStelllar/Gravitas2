@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:dread_lich",
+    "variants": [],
+    "name": "entity.iceandfire.dread_lich",
+    "name_color": "#A3B5C6",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 2048,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 4
+    },
+    "base_drop": {
+        "item": "minecraft:bone",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.dread_lich",
+    "fabricator_drops": [
+        {
+            "item": "iceandfire:dread_shard",
+            "count": 2
+        },
+        {
+            "item": "iceandfire:dread_key",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 4
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:deathworm",
+    "variants": [],
+    "name": "entity.iceandfire.deathworm",
+    "name_color": "#0E5FC0",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 2048,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:rotten_flesh",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.deathworm",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 4
+        },
+        {
+            "item": "iceandfire:deathworm_tounge",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:deathworm_egg_giant",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:deathworm_egg",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:deathworm_chitin_yellow",
+            "count": 2
+        }
+    ]
+}

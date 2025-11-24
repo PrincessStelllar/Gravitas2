@@ -1,0 +1,49 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:cockatrice",
+    "variants": [],
+    "name": "entity.iceandfire.cockatrice",
+    "name_color": "#E73051",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:feather",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.cockatrice",
+    "fabricator_drops": [
+        {
+            "item": "iceandfire:witherbone",
+            "count": 1
+        },
+        {
+            "item": "minecraft:feather",
+            "count": 4
+        },
+        {
+            "item": "tfc:food/chicken",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:cockatrice_skull",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:cockatrice_eye",
+            "count": 1
+        }
+    ]
+}

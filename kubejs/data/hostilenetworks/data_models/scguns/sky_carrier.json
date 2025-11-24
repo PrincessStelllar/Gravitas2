@@ -1,0 +1,45 @@
+{
+    "conditions": [
+        {
+            "modid": "scguns",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "scguns:sky_carrier",
+    "variants": [],
+    "name": "entity.scguns.sky_carrier",
+    "name_color": "#C837A5",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 8192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:gold_nugget",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.sky_carrier",
+    "fabricator_drops": [
+        {
+            "item": "scguns:compact_advanced_round",
+            "count": 1
+        },
+        {
+            "item": "scguns:anthralite_nugget",
+            "count": 1
+        },
+        {
+            "item": "scguns:ancient_brass",
+            "count": 1
+        },
+        {
+            "item": "scguns:advanced_round",
+            "count": 1
+        }
+    ]
+}

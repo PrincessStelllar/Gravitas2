@@ -1,0 +1,31 @@
+{
+    "entity": "minecraft:spider",
+    "variants": [],
+    "name": "entity.minecraft.spider",
+    "name_color": "#E9C528",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 512,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:string",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.spider",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:string",
+            "count": 12
+        },
+        {
+            "item": "minecraft:spider_eye",
+            "count": 4
+        }
+    ]
+}

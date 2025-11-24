@@ -1,0 +1,57 @@
+{
+    "conditions": [
+        {
+            "modid": "scguns",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "scguns:supply_scamp",
+    "variants": [],
+    "name": "entity.scguns.supply_scamp",
+    "name_color": "#5C311C",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 8192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:gunpowder",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.supply_scamp",
+    "fabricator_drops": [
+        {
+            "item": "scguns:treated_iron_blend",
+            "count": 4
+        },
+        {
+            "item": "scguns:powder_and_ball",
+            "count": 1
+        },
+        {
+            "item": "scguns:iron_blueprint",
+            "count": 1
+        },
+        {
+            "item": "minecraft:gunpowder",
+            "count": 16
+        },
+        {
+            "item": "scguns:copper_blueprint",
+            "count": 1
+        },
+        {
+            "item": "scguns:anthralite_nugget",
+            "count": 1
+        },
+        {
+            "item": "scguns:ancient_brass",
+            "count": 1
+        }
+    ]
+}

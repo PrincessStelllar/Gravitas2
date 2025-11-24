@@ -1,0 +1,36 @@
+{
+    "entity": "minecraft:ender_dragon",
+    "variants": [],
+    "name": "entity.minecraft.ender_dragon",
+    "name_color": "#CC00CC",
+    "gui_scale": 0.25,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0.5,
+    "gui_z_offset": 0,
+    "sim_cost": 10240,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 64
+    },
+    "base_drop": {
+        "item": "minecraft:obsidian",
+        "count": 4
+    },
+    "trivia": "hostilenetworks.trivia.ender_dragon",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:dragon_breath",
+            "count": 4
+        },
+        {
+            "item": "minecraft:dragon_egg",
+            "count": 1
+        }
+    ],
+    "data_per_kill": [
+        3,
+        12,
+        30,
+        45
+    ]
+}

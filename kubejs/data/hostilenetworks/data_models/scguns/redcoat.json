@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "modid": "scguns",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "scguns:redcoat",
+    "variants": [],
+    "name": "entity.scguns.redcoat",
+    "name_color": "#8FCDBA",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 2048,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:rotten_flesh",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.redcoat",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 4
+        },
+        {
+            "item": "scguns:powder_and_ball",
+            "count": 2
+        },
+        {
+            "item": "scguns:musket",
+            "count": 1
+        }
+    ]
+}

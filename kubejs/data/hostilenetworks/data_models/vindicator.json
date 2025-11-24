@@ -1,0 +1,27 @@
+{
+    "entity": "minecraft:vindicator",
+    "variants": [],
+    "name": "entity.minecraft.vindicator",
+    "name_color": "#1F6B11",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:emerald",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.vindicator",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:emerald",
+            "count": 1
+        }
+    ]
+}

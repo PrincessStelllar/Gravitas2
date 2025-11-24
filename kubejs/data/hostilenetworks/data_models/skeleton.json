@@ -1,0 +1,31 @@
+{
+    "entity": "minecraft:skeleton",
+    "variants": [],
+    "name": "entity.minecraft.skeleton",
+    "name_color": "#9E81E5",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 512,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:bone",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.skeleton",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:bone",
+            "count": 4
+        },
+        {
+            "item": "minecraft:arrow",
+            "count": 8
+        }
+    ]
+}

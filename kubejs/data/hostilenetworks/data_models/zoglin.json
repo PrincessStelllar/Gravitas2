@@ -1,0 +1,35 @@
+{
+    "entity": "minecraft:zoglin",
+    "variants": [],
+    "name": "entity.minecraft.zoglin",
+    "name_color": "#67A9A2",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:rotten_flesh",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.zoglin",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 4
+        },
+        {
+            "item": "beneath:cursed_hide",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 4
+        }
+    ]
+}

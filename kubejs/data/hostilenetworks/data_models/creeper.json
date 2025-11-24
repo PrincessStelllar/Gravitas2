@@ -1,0 +1,27 @@
+{
+    "entity": "minecraft:creeper",
+    "variants": [],
+    "name": "entity.minecraft.creeper",
+    "name_color": "#3C85E2",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:gunpowder",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.creeper",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:gunpowder",
+            "count": 4
+        }
+    ]
+}

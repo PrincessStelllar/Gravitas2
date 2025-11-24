@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:troll",
+    "variants": [],
+    "name": "entity.iceandfire.troll",
+    "name_color": "#347E97",
+    "display_nbt": {},
+    "gui_scale": 0.75,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 8192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "gtceu:damascus_steel_nugget",
+        "count": 5
+    },
+    "trivia": "hostilenetworks.trivia.troll",
+    "fabricator_drops": [
+        {
+            "item": "iceandfire:troll_tusk",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:troll_skull",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:troll_leather_forest",
+            "count": 1
+        }
+    ]
+}

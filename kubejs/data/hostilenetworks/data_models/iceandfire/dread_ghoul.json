@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:dread_ghoul",
+    "variants": [],
+    "name": "entity.iceandfire.dread_ghoul",
+    "name_color": "#27C667",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:rotten_flesh",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.dread_ghoul",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 6
+        },
+        {
+            "item": "iceandfire:dread_shard",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 4
+        }
+    ]
+}

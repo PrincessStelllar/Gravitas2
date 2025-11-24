@@ -1,0 +1,11 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:myrmex_worker",
+    "variants": [],
+    "name": "entity.iceandfire.myrmex_worker"
+}

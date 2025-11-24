@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:sea_serpent",
+    "variants": [],
+    "name": "entity.iceandfire.sea_serpent",
+    "name_color": "#ADF817",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 8192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "gtceu:bronze_nugget",
+        "count": 3
+    },
+    "trivia": "hostilenetworks.trivia.sea_serpent",
+    "fabricator_drops": [
+        {
+            "item": "iceandfire:seaserpent_skull",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:sea_serpent_scales_blue",
+            "count": 2
+        },
+        {
+            "item": "iceandfire:sea_serpent_fang",
+            "count": 1
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:ghost",
+    "variants": [],
+    "name": "entity.iceandfire.ghost",
+    "name_color": "#397E4E",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:ectoplasm",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.ghost",
+    "fabricator_drops": [
+        {
+            "item": "iceandfire:ghost_ingot",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:ectoplasm",
+            "count": 4
+        }
+    ]
+}

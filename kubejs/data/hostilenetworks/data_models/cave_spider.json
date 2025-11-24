@@ -1,0 +1,31 @@
+{
+    "entity": "minecraft:cave_spider",
+    "variants": [],
+    "name": "entity.minecraft.cave_spider",
+    "name_color": "#6D1ED7",
+    "display_nbt": {},
+    "gui_scale": 1.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:string",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.cave_spider",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:string",
+            "count": 4
+        },
+        {
+            "item": "minecraft:spider_eye",
+            "count": 1
+        }
+    ]
+}

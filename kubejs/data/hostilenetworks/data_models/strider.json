@@ -1,0 +1,31 @@
+{
+    "entity": "minecraft:strider",
+    "variants": [],
+    "name": "entity.minecraft.strider",
+    "name_color": "#45B9EE",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:bone",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.strider",
+    "fabricator_drops": [
+        {
+            "item": "beneath:cursed_hide",
+            "count": 1
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 4
+        }
+    ]
+}

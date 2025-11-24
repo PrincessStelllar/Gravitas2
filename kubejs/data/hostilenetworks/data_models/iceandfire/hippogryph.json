@@ -1,0 +1,46 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:hippogryph",
+    "variants": [],
+    "name": "entity.iceandfire.hippogryph",
+    "name_color": "#A7BC6C",
+    "display_nbt": {},
+    "gui_scale": 0.75,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 4096,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:feather",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.hippogryph",
+    "fabricator_drops": [
+        {
+            "item": "tfc:large_raw_hide",
+            "count": 1,
+            "optional": true
+        },
+        {
+            "item": "iceandfire:hippogryph_talon",
+            "count": 3
+        },
+        {
+            "item": "iceandfire:hippogryph_skull",
+            "count": 1
+        },
+        {
+            "item": "minecraft:feather",
+            "count": 4
+        }
+    ]
+}

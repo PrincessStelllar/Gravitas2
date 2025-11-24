@@ -1,0 +1,11 @@
+{
+    "conditions": [
+        {
+            "modid": "allthemodium",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "allthemodium:piglich",
+    "variants": [],
+    "name": "entity.allthemodium.piglich"
+}

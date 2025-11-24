@@ -1,0 +1,49 @@
+{
+    "conditions": [
+        {
+            "modid": "iceandfire",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "iceandfire:cyclops",
+    "variants": [],
+    "name": "entity.iceandfire.cyclops",
+    "name_color": "#197FFF",
+    "display_nbt": {},
+    "gui_scale": 0.15,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 8192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 4
+    },
+    "base_drop": {
+        "item": "minecraft:wool",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.cyclops",
+    "fabricator_drops": [
+        {
+            "item": "tfc:wool",
+            "count": 4
+        },
+        {
+            "item": "tfc:large_raw_hide",
+            "count": 1
+        },
+        {
+            "item": "tfc:food/mutton",
+            "count": 2
+        },
+        {
+            "item": "iceandfire:cyclops_skull",
+            "count": 1
+        },
+        {
+            "item": "iceandfire:cyclops_eye",
+            "count": 1
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "conditions": [
+        {
+            "modid": "scguns",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "scguns:cog_minion",
+    "variants": [],
+    "name": "entity.scguns.cog_minion",
+    "name_color": "#5DD514",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 4096,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:gold_nugget",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.cog_minion",
+    "fabricator_drops": [
+        {
+            "item": "scguns:anthralite_nugget",
+            "count": 2
+        },
+        {
+            "item": "scguns:ancient_brass",
+            "count": 1
+        }
+    ]
+}

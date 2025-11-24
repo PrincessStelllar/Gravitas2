@@ -1,0 +1,31 @@
+{
+    "entity": "minecraft:piglin",
+    "variants": [],
+    "name": "entity.minecraft.piglin",
+    "name_color": "#8EF9BE",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "tfc:food/pork",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.piglin",
+    "fabricator_drops": [
+        {
+            "item": "tfc:food/pork",
+            "count": 2
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 1
+        }
+    ]
+}

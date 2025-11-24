@@ -2695,6 +2695,52 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
     '#forge:rods/aluminium'
   )
 
+  // Hostile Networks
+  event.recipes.gtceu.assembler("gregitas:sim_chamber")
+    .itemInputs("4x #gtceu:circuits/mv", "gtceu:hv_machine_hull", "6x gtceu:stainless_steel_plate", "4x gtceu:magnesium_diboride_double_wire", "8x gtceu:ram_chip", "gtceu:polyethylene_large_fluid_pipe")
+    .inputFluids(Fluid.of("gtceu:polyethylene", 250))
+    .itemOutputs("hostilenetworks:sim_chamber")
+    .duration(500)
+    .EUt(100)
+
+  event.recipes.gtceu.assembler("gregitas:loot_fabricator")
+    .itemInputs("6x #gtceu:circuits/mv", "gtceu:hv_machine_hull", "6x gtceu:stainless_steel_plate", "4x gtceu:magnesium_diboride_double_wire", "16x gtceu:ulpic_chip", "gtceu:cobalt_large_item_pipe", "2x gtceu:hv_electric_motor")
+    .inputFluids(Fluid.of("gtceu:polyethylene", 250))
+    .itemOutputs("hostilenetworks:loot_fabricator")
+    .duration(500)
+    .EUt(128)
+	
+  shaped("hostilenetworks:deep_learner", ["EPS", "CMT", "PBP"], {
+    E: "gtceu:hv_emitter",
+    P: "gtceu:stainless_steel_plate",
+    S: "gtceu:hv_sensor",
+    C: "gtceu:capacitor",
+    M: "gtceu:computer_monitor_cover",
+    B: "#gtceu:batteries/hv",
+    T: "gtceu:transistor"
+  })
+
+  event.recipes.gtceu.assembler("gregitas:prediction_matrix_low")
+    .itemInputs("4x gtceu:glass_tube")
+    .inputFluids(Fluid.of("gtceu:aluminium", 288))
+    .itemOutputs("4x hostilenetworks:prediction_matrix")
+    .duration(120)
+    .EUt(64)
+  
+  event.recipes.gtceu.assembler("gregitas:prediction_matrix_high")
+    .itemInputs("4x gtceu:glass_tube")
+    .inputFluids(Fluid.of("gtceu:blue_steel", 144))
+    .itemOutputs("32x hostilenetworks:prediction_matrix")
+    .duration(240)
+    .EUt(HV - 64)
+
+  event.recipes.gtceu.circuit_assembler("gregitas:blank_data_model")
+    .itemInputs("2x gtceu:ram_chip", "2x gtceu:ilc_chip", "#gtceu:circuits/mv", "gtceu:stainless_steel_plate", "gtceu:resin_printed_circuit_board")
+    .inputFluids(Fluid.of("gtceu:soldering_alloy", 144))
+    .itemOutputs("hostilenetworks:blank_data_model")
+    .duration(260)
+    .EUt(64)
+
   // TFC Casting with Channels
   event.recipes.minecraft.smelting('tfcchannelcasting:channel', 'tfcchannelcasting:unfired_channel')
   event.recipes.minecraft.smelting('tfcchannelcasting:mold_table', 'tfcchannelcasting:unfired_mold_table')

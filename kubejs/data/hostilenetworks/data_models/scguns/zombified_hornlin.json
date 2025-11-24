@@ -1,0 +1,45 @@
+{
+    "conditions": [
+        {
+            "modid": "scguns",
+            "type": "forge:mod_loaded"
+        }
+    ],
+    "entity": "scguns:zombified_hornlin",
+    "variants": [],
+    "name": "entity.scguns.zombified_hornlin",
+    "name_color": "#6FD076",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 1024,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:rotten_flesh",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.zombified_hornlin",
+    "fabricator_drops": [
+        {
+            "item": "scguns:sheol",
+            "count": 1
+        },
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 4
+        },
+        {
+            "item": "scguns:hog_round",
+            "count": 1
+        },
+        {
+            "item": "minecraft:gold_nugget",
+            "count": 1
+        }
+    ]
+}

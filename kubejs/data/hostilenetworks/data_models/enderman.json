@@ -1,0 +1,27 @@
+{
+    "entity": "minecraft:enderman",
+    "variants": [],
+    "name": "entity.minecraft.enderman",
+    "name_color": "#591EDA",
+    "display_nbt": {},
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 2048,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "minecraft:ender_pearl",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.enderman",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:ender_pearl",
+            "count": 4
+        }
+    ]
+}
