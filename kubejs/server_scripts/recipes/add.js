@@ -2710,7 +2710,7 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
   event.recipes.gtceu.canner("gregitas:reactor_solid_fuel")
     .itemInputs("gtceu:stainless_steel_fluid_cell")
     .inputFluids(Fluid.of("gtceu:lead", 576))
-    .itemOutputs("nuclearcraft:reactor_solid_fuel_cell")
+    .itemOutputs("nuclearcraft:fission_reactor_solid_fuel_cell")
     .duration(200)
     .EUt(MV)
 
