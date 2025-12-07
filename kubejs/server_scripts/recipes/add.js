@@ -2677,6 +2677,43 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
     .duration(200)
     .EUt(20)
 
+
+  // Nuclearcraft Recipes
+
+  // Fission
+  event.recipes.gtceu.mixer("gregitas:fission_reactor_casing")
+    .itemInputs("gtceu:steel_frame", "6x gtceu:lead_plate", "6x gtceu:steel_plate")
+    .fluidInputs(Fluid.of("gtceu:concrete", 288))
+    .itemOutputs("nuclearcraft:fission_reactor_casing")
+    .duration(600)
+    .EUt(MV * 0.75)
+  
+  event.recipes.gtceu.assembler("gregitas:fission_reactor_controller")
+    .itemInputs("2x #gtceu:circuits/hv", "4x nuclearcraft:fission_reactor_casing", "4x gtceu:steel_plate")
+    .itemOutputs("nuclearcraft:fission_reactor_controller")
+    .duration(1200)
+    .EUt(HV * 0.5)
+
+  event.recipes.gtceu.mixer("gregitas:fission_reactor_empty_heatsink")
+    .itemInputs("2x gtceu:kanthal_plate", "4x gtceu:steel_plate", "minecraft:bucket")
+    .fluidInputs(Fluid.of("gtceu:concrete", 144))
+    .itemOutputs("nuclearcraft:fission_reactor_empty_heatsink")
+    .duration(400)
+    .EUt(MV * 0.5)
+  
+  event.recipes.gtceu.assembler("gregitas:fission_reactor_port")
+    .itemInputs("2x gtceu:mv_robot_arm", "4x gtceu:stainless_steel_plate", "gtceu:steel_frame")
+    .itemOutputs("nuclearcraft:fission_reactor_port")
+    .duration(800)
+    .EUt(HV * 0.35)
+  
+  event.recipes.gtceu.canner("gregitas:reactor_solid_fuel")
+    .itemInputs("gtceu:stainless_steel_fluid_cell")
+    .fluidInputs(Fluid.of("gtceu:lead", 576))
+    .itemOutputs("nuclearcraft:reactor_solid_fuel_cell")
+    .duration(200)
+    .EUt(MV)
+
   //Sophisticated Backpacks
   shaped("sophisticatedbackpacks:tool_swapper_upgrade", ["BFB", "CGD", "AEA"], {
     A: "#forge:ingots/iron",
