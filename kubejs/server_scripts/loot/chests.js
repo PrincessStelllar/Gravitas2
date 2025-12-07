@@ -35,6 +35,7 @@ const chestBanList = [
   "railcraft:steel_plate",
   "railcraft:steel_sword",
   "railcraft:tank_minecart",
+  "gtceu:steel_ingot",
   "sgjourney:jaffa_boots",
   "sgjourney:jaffa_chestplate",
   "sgjourney:jaffa_helmet",
