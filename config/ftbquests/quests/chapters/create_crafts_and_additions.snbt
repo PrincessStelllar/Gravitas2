@@ -28,59 +28,83 @@
 						items: [
 							{
 								Count: 1b
-								id: "railways:track_acacia"
+								id: "railways:track_tfc_acacia"
 							}
 							{
 								Count: 1b
-								id: "railways:track_birch"
+								id: "railways:track_tfc_ash"
 							}
 							{
 								Count: 1b
-								id: "railways:track_dark_oak"
+								id: "railways:track_tfc_aspen"
 							}
 							{
 								Count: 1b
-								id: "railways:track_jungle"
+								id: "railways:track_tfc_birch"
 							}
 							{
 								Count: 1b
-								id: "railways:track_oak"
+								id: "railways:track_tfc_blackwood"
 							}
 							{
 								Count: 1b
-								id: "railways:track_spruce"
+								id: "railways:track_tfc_chestnut"
 							}
 							{
 								Count: 1b
-								id: "railways:track_mangrove"
+								id: "railways:track_tfc_douglas_fir"
 							}
 							{
 								Count: 1b
-								id: "railways:track_warped"
+								id: "railways:track_tfc_hickory"
 							}
 							{
 								Count: 1b
-								id: "railways:track_blackstone"
+								id: "railways:track_tfc_kapok"
 							}
 							{
 								Count: 1b
-								id: "railways:track_ender"
+								id: "railways:track_tfc_mangrove"
 							}
 							{
 								Count: 1b
-								id: "railways:track_tieless"
+								id: "railways:track_tfc_maple"
 							}
 							{
 								Count: 1b
-								id: "railways:track_phantom"
+								id: "railways:track_tfc_palm"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_pine"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_rosewood"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_sequoia"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_spruce"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_sycamore"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_white_cedar"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_willow"
 							}
 							{
 								Count: 1b
 								id: "create:track"
-							}
-							{
-								Count: 1b
-								id: "railways:track_crimson"
 							}
 						]
 					}
@@ -111,55 +135,79 @@
 						items: [
 							{
 								Count: 1b
-								id: "railways:track_ender_wide"
+								id: "railways:track_tfc_acacia_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_acacia_wide"
+								id: "railways:track_tfc_ash_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_crimson_wide"
+								id: "railways:track_tfc_aspen_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_warped_wide"
+								id: "railways:track_tfc_birch_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_tieless_wide"
+								id: "railways:track_tfc_blackwood_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_oak_wide"
+								id: "railways:track_tfc_chestnut_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_birch_wide"
+								id: "railways:track_tfc_douglas_fir_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_dark_oak_wide"
+								id: "railways:track_tfc_hickory_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_blackstone_wide"
+								id: "railways:track_tfc_kapok_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_jungle_wide"
+								id: "railways:track_tfc_mangrove_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_spruce_wide"
+								id: "railways:track_tfc_maple_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_mangrove_wide"
+								id: "railways:track_tfc_palm_wide"
 							}
 							{
 								Count: 1b
-								id: "railways:track_create_andesite_wide"
+								id: "railways:track_tfc_pine_wide"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_rosewood_wide"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_sequoia_wide"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_spruce_wide"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_sycamore_wide"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_white_cedar_wide"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_willow_wide"
 							}
 						]
 					}
@@ -190,55 +238,79 @@
 						items: [
 							{
 								Count: 1b
-								id: "railways:track_ender_narrow"
+								id: "railways:track_tfc_acacia_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_acacia_narrow"
+								id: "railways:track_tfc_ash_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_crimson_narrow"
+								id: "railways:track_tfc_aspen_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_warped_narrow"
+								id: "railways:track_tfc_birch_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_tieless_narrow"
+								id: "railways:track_tfc_blackwood_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_dark_oak_narrow"
+								id: "railways:track_tfc_chestnut_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_oak_narrow"
+								id: "railways:track_tfc_douglas_fir_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_birch_narrow"
+								id: "railways:track_tfc_hickory_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_blackstone_narrow"
+								id: "railways:track_tfc_kapok_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_jungle_narrow"
+								id: "railways:track_tfc_mangrove_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_spruce_narrow"
+								id: "railways:track_tfc_maple_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_mangrove_narrow"
+								id: "railways:track_tfc_palm_narrow"
 							}
 							{
 								Count: 1b
-								id: "railways:track_create_andesite_narrow"
+								id: "railways:track_tfc_pine_narrow"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_rosewood_narrow"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_sequoia_narrow"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_spruce_narrow"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_sycamore_narrow"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_white_cedar_narrow"
+							}
+							{
+								Count: 1b
+								id: "railways:track_tfc_willow_narrow"
 							}
 						]
 					}
@@ -662,8 +734,8 @@
 			can_repeat: false
 			description: ["This Quest has been authored by &6AllTheMods Staff&r, or a &2Community contributor&r for use in AllTheMods Modpacks.\\nAs all &6AllTheMods&r packs are licensed under &eAll Rights Reserved&r, this Quest is not allowed to be used in any public packs not released by the &6AllTheMods Team&r, without explicit permission.\\n\\nThis quest is intentionally hidden, if you're seeing this, you're in editing mode."]
 			disable_toast: true
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"

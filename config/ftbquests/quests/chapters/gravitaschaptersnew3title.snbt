@@ -527,12 +527,29 @@
 					id: "647A2EA955572BC2"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "itemfilters:or"
 						tag: {
-							value: "create:sandpaper"
+							items: [
+								{
+									Count: 1b
+									id: "create:sand_paper"
+								}
+								{
+									Count: 1b
+									id: "create:red_sand_paper"
+								}
+								{
+									Count: 1b
+									id: "createaddition:diamond_grit_sandpaper"
+								}
+								{
+									Count: 1b
+									id: "tfc:sandpaper"
+								}
+							]
 						}
 					}
-					title: "Any #create:sandpaper"
+					title: "Any sandpaper"
 					type: "item"
 				}
 			]

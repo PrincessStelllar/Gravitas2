@@ -476,7 +476,19 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: 'wirelessredstone:frequency_tool'}) 
   event.remove({ id: 'wirelessredstone:frequency_sniffer'}) 
   event.remove({ id: 'wirelessredstone:redstone_receiver'}) 
-  event.remove({ id: 'wirelessredstone:redstone_transmitter'}) 
+  event.remove({ id: 'wirelessredstone:redstone_transmitter'})
+  
+  // NuclearCraft
+  event.remove({ id: 'nuclearcraft:fission_reactor_casing'})
+  event.remove({ id: 'nuclearcraft:fission_reactor_controller'})
+  event.remove({ id: 'nuclearcraft:fission_reactor_port'})
+  event.remove({ id: 'nuclearcraft:empty_heat_sink'})
+  event.remove({ id: 'nuclearcraft:fission_reactor_solid_fuel_cell'})
+
+  event.remove({ id: 'nuclearcraft:fusion_reactor_casing'})
+  event.remove({ id: 'nuclearcraft:basic_electromagnet'})
+  event.remove({ id: 'nuclearcraft:basic_rf_amplifier'})
+  event.remove({ id: 'nuclearcraft:fusion_reactor_connector'})
 
   //more red
 

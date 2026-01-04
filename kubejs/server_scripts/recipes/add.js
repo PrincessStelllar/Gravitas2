@@ -2624,7 +2624,7 @@ event.recipes.create.crushing([`2x minecraft:gray_dye`], `gtceu:stone_dust`, 250
     .duration(1200)
     .EUt(HV * 0.5)
 
-  event.recipes.gtceu.mixer("gregitas:fission_reactor_empty_heatsink")
+  event.recipes.gtceu.mixer("gregitas:empty_heatsink")
     .itemInputs("2x gtceu:kanthal_plate", "4x gtceu:steel_plate", "minecraft:bucket")
     .inputFluids(Fluid.of("gtceu:concrete", 144))
     .itemOutputs("nuclearcraft:empty_heat_sink")
@@ -2637,7 +2637,7 @@ event.recipes.create.crushing([`2x minecraft:gray_dye`], `gtceu:stone_dust`, 250
     .duration(800)
     .EUt(HV * 0.35)
   
-  event.recipes.gtceu.canner("gregitas:reactor_solid_fuel")
+  event.recipes.gtceu.canner("gregitas:fission_reactor_solid_fuel")
     .itemInputs("gtceu:stainless_steel_fluid_cell")
     .inputFluids(Fluid.of("gtceu:lead", 576))
     .itemOutputs("nuclearcraft:fission_reactor_solid_fuel_cell")
@@ -2665,7 +2665,7 @@ event.recipes.create.crushing([`2x minecraft:gray_dye`], `gtceu:stone_dust`, 250
     .duration(400)
     .EUt(HV * 0.5)
 
-  event.recipes.gtceu.assembler("fusion_reactor_connector")
+  event.recipes.gtceu.assembler("gregitas:fusion_reactor_connector")
     .itemInputs("gtceu:stainless_steel_frame", "6x gtceu:lead_plate", "#gtceu:circuits/mv")
     .itemOutputs("nuclearcraft:fusion_reactor_connector")
     .duration(800)
