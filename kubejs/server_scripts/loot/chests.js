@@ -243,7 +243,8 @@ const chestReplacementMap = {
   "gtceu:quarktech_boots"  : "gtceu:bronze_ingot",
   "gtceu:quarktech_helmet"  : "gtceu:bronze_ingot",
   "gtceu:advanced_quarktech_chestplate"  : "workerstfc:coin",
-
+  "gtceu:manganese_ingot"  : "workerstfc:coin",
+  "gtceu:neodymium_dust"  : "workerstfc:coin",
 }
 
 let modifyAndRemoveChestLoot = (/** @type {Internal.LootModificationEventJS} */ event) => {
