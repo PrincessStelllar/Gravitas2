@@ -504,4 +504,7 @@ const addItemTags = (/** @type {TagEvent.Item} */ event) => {
 
   event.add("vintage:curving_heads", ["gtceu:ingot_casting_mold"])
   event.add("headlight:lights", ["tfc:torch"])
+  event.add("gtceu:tools/crafting_saws", "#tfc:saws")
+  event.add("gtcu:tools/crafting_hammers", "#tfc:hammers")
+  event.add("gtceu:tools/crafting_knives", "#tfc:knives")
 }
