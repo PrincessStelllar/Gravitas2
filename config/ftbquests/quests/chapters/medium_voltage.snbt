@@ -423,13 +423,6 @@
 			description: ["{gravitas.quest.mv.desc.lubricant}"]
 			id: "42FD79CEB3426861"
 			optional: true
-			rewards: [{
-				count: 8
-				id: "782AFBC0CD345E5F"
-				item: "minecraft:tropical_fish"
-				random_bonus: 4
-				type: "item"
-			}]
 			tasks: [{
 				id: "4DA40BBA92BE3271"
 				item: "gtceu:lubricant_bucket"
@@ -999,12 +992,6 @@
 		{
 			description: ["{gravitas.quest.mv.desc.plant_ball}"]
 			id: "6300791605A757B0"
-			rewards: [{
-				count: 8
-				id: "7E0D1BD5A8DFD24A"
-				item: "minecraft:potato"
-				type: "item"
-			}]
 			subtitle: "{gravitas.quest.mv.subtitle.plant_ball}"
 			tasks: [{
 				id: "577EEBAF4FACDCA1"

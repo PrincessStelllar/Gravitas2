@@ -374,21 +374,6 @@
 				id: "tfc:food/salmon"
 			}
 			id: "2E9A1FAAEB2D9F95"
-			rewards: [{
-				count: 2
-				id: "7F25380898A36D91"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 0L
-							traits: [ ]
-						}
-					}
-					id: "tfc:food/pumpkin_chunks"
-				}
-				type: "item"
-			}]
 			subtitle: "{gravitas.quest.stage1.subt.foods}"
 			tasks: [{
 				id: "12CBB611C3A1F185"
