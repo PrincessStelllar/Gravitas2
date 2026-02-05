@@ -7,7 +7,7 @@ const banIEMultiblocks = (event) => {
             "multiblocks/squeezer"
         ],
         "advancedtfctech" : [],
-        "immersivegeolggy" : [
+        "immersivegeology" : [
             "multiblocks/alternator",
             "multiblocks/ballmill",
             "multiblocks/bloomery",
@@ -38,4 +38,5 @@ const banIEMultiblocks = (event) => {
         console.error("Multiblock not allowed! " + event.getMultiblock().getUniqueName())
         event.getEntity().setStatusMessage(Text.red("Multiblock not allowed!"))
     }
+        
 }

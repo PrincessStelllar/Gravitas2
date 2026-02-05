@@ -373,5 +373,10 @@ event.replaceInput(
   event.replaceInput({ id: "immersive_aircraft:telescope" }, "#railways:internal/ingots/copper_ingots", "create:metal_bracket")
   event.replaceInput({ mod: "immersive_aircraft" }, "#railways:internal/ingots/copper_ingots", "#forge:plates/copper")
   event.replaceInput({ id: "minecraft:book"}, "minecraft:leather", "#forge:leather")
+  event.replaceInput({ id:"farmersdelight:cooking_pot"}, "minecraft:iron_ingot", "#forge:plates/bronze")
+  event.replaceInput({ id: "farmersdelight:cooking_pot"}, "minecraft:wooden_shovel", "minecraft:stick")
+  event.replaceInput({ id: "farmersdelight:cooking_pot"}, "minecraft:water_bucket", "tfc:wooden_bucket")
+  
+
 }
 

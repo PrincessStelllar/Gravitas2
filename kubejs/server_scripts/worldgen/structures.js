@@ -137,9 +137,11 @@ const replaceVanillaBlocks = (/** @type {Internal.StructureLoadEventJS} */ event
     event.id.startsWith("apotheosis") ||
     event.id.startsWith("waystones") ||
     event.id.startsWith("immersiveengineering") ||
+    event.id.startswith("railcraft") ||
     event.id.startsWith("ae2") ||
     event.id.startsWith("iceandfire") ||
-    event.id.startsWith("scguns") 
+    event.id.startsWith("scguns") ||
+    event.id.startsWith("tombstone")
   ) {
     event.forEachPalettes((palette) => {
       palette.forEach((struc) => {
