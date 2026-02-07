@@ -46,6 +46,7 @@ ServerEvents.tags("worldgen/biome", (event) => {
 
 ServerEvents.tags("worldgen/placed_feature", (event) => {
   addGregVeinsToTags(event)
+  removeDFCOreVeins(event)
 })
 
 ServerEvents.tags("item", (event) => {
@@ -83,6 +84,7 @@ ServerEvents.lowPriorityData((event) => {
   overrideTFCArmourFinalWeld(event)
   addGregVeinData(event)
   addGenericData(event)
+  overrideTFCWorldPreset(event)
 })
 
 NetworkEvents.dataReceived("customTask", (event) => {
