@@ -8,6 +8,7 @@ ServerEvents.recipes((event) => {
   addCollapse(event)
   tfcGregTools(event)
   recipesTFCGlassblowingLenses(event)
+  tfcMetalProcessing(event)
   gtceuAdd(event)
   createAdd(event)
   centrifugeAdd(event)
@@ -27,6 +28,7 @@ ServerEvents.recipes((event) => {
   gregifyLaserIO(event)
   replaceDisc(event)
   blazeLiquidFuels(event)
+  dfcRecipes(event)
   addDFCHeatingRecipesViaEvent(event)
 })
 

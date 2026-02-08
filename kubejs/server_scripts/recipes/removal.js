@@ -21,6 +21,18 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   // After adding mods, use this to update client_scripts/recipe_categories:
   // logRecipeCategories();
 
+  // DFC - remove all recipes outputting DFC powders
+  const dfcPowderMetals = [
+    "bismuth", "bismuth_bronze", "black_bronze", "bronze", "brass",
+    "copper", "gold", "nickel", "rose_gold", "silver", "tin", "zinc",
+    "sterling_silver", "wrought_iron", "steel", "black_steel",
+    "blue_steel", "red_steel", "aluminum", "lead", "platinum", "cast_iron",
+    "alumina", "pewter"
+  ]
+  dfcPowderMetals.forEach((metal) => {
+    event.remove({ output: `dfc:metal/powder/${metal}` })
+  })
+
   // Global remove + hides
   global.itemsToRemove.forEach(item => event.remove({output: item}))
   // Create bucket filling
@@ -38,6 +50,8 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "vintage:curving/iron_sheet"})
   event.remove({ id: "vintage:rolling/andesite_plate"})
   event.remove({ id: "vintage:pressing/andesite_alloy"})
+  event.remove({ id: "vintage:pressing/cast_iron_ingot"})
+  event.remove({ id: "vintage:rolling/cast_iron_ingot"})
   // sgjourney
   event.remove({ id: "sgjourney:temp_pure_naquadah_from_blasting" })
   event.remove({ id: "sgjourney:classic_stargate_base_block" })
