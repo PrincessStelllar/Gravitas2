@@ -27,6 +27,7 @@ ServerEvents.recipes((event) => {
   gregifyLaserIO(event)
   replaceDisc(event)
   blazeLiquidFuels(event)
+  addDFCHeatingRecipesViaEvent(event)
 })
 
 LootJS.modifiers((event) => {
