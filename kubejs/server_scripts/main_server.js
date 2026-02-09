@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
   centrifugeAdd(event)
   //oreWashingAdd(event)
   //oreVibratingAdd(event)
-  //viSulfuricAcid(event)
+  viSulfuricAcid(event)
   //wiresAdd(event)
   addOreConversions(event)
   create_new_age(event)
