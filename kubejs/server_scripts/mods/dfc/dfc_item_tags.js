@@ -17,11 +17,17 @@ let dfcAddItemTags = (/** @type {TagEvent.Item} */ event) => {
   })
   
   // Colored brick tags for dyeing
-  
+
   dfcColors.forEach(color => {
     event.add('gregitas:colored_brick_blocks', `dfc:ceramic/bricks/${color}`)
     event.add('gregitas:colored_brick_slabs', `dfc:ceramic/bricks/${color}_slab`)
     event.add('gregitas:colored_brick_stairs', `dfc:ceramic/bricks/${color}_stairs`)
     event.add('gregitas:colored_brick_walls', `dfc:ceramic/bricks/${color}_wall`)
+  })
+
+  // Ceramic shingle tags for dyeing
+
+  dfcTileColors.forEach(color => {
+    event.add('gregitas:ceramic_shingles', `dfc:ceramic/shingles/${color}`)
   })
 }
