@@ -2966,4 +2966,12 @@ event.recipes.create.crushing([`2x minecraft:gray_dye`], `gtceu:stone_dust`, 250
          event.recipes.vintage.polishing("minecraft:" + vanTree.id + "_door", vanTree.namespace + ":wood/planks/" + vanTree.replace + "_door", 300,8) 
 
         })
+
+    event.recipes.gtceu
+    .macerator("gregitas:saltpeter_from_crystal")
+    .itemInputs("immersivegeology:crystal_saltpeter")
+    .itemOutputs("gtceu:saltpeter_dust")
+    .chancedOutput("gtceu:saltpeter_dust", 420, 1)
+    .duration(180)
+    .EUt(80)    
 }
