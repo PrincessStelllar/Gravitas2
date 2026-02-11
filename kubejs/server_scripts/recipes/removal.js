@@ -648,7 +648,7 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "gtceu:chemical_reactor/ultra_high_grade_hypogen_separation_agent"})
 
   //Coins
-  event.remove({ id: `/^createdeco:pressing\/coins\/.*_coin/`})
+  event.remove({ id: /^createdeco:pressing\/coins\/.*_coin/})
   event.remove({ id: "workerstfc:anvil/coins1"})
   event.remove({ id: "workerstfc:anvil/coins2"})
   event.remove({ id: "workerstfc:anvil/coins3"})
@@ -664,5 +664,6 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "farmersdelight:sweet_berry_cheesecake"})
   event.remove({ id: "farmersdelight:pie_crust"})
   event.remove({ id: "farmersdelight:integration/create/mixing/pie_crust_from_mixing"})
-
+  event.remove({ id: `/^woodencog:heated_mixing\/food\/jams\/*._4/`})
+  event.remove({ id: `/^woodencog:heated_mixing\/food\/jams\/*._3/`})
 }

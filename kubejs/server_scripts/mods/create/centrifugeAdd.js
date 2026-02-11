@@ -77,7 +77,7 @@ let centrifugeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
             let outFluid = original_output_fluids[i]    
             if (wedone == true) { return }
             
-            console.log("RECIPE CHECK " + String(recipe.id))
+            
             if (String(recipe.id).includes("netherrack") ) { break }
             if (String(recipe.id).includes("oilsands") ) { break }
             if (String(recipe.id).includes("endstone") ) { break }
@@ -88,8 +88,7 @@ let centrifugeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
             if (String(recipe.id).includes("mycelium") ){ break }    
             if (String(recipe.id).includes("dirt") ){ break } 
             if (String(recipe.id).includes("spessartine") ){ break } 
-            console.log("CHECKLIST " + output.content.ingredient.item + " " + output.content.count + " ")
-            console.log(JSON.stringify(output))
+
 
             results.push(Item.of(output.content.ingredient.item, output.count).withChance(output.chance / 10000))
             

@@ -1753,7 +1753,6 @@ let recipeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
       .itemInputs(`tfc:rock/loose/${stone}`)
       .itemOutputs(`gregitas_core:${stone}_dust`)
       .chancedOutput(`gregitas_core:${stone}_dust`, 1000, 1)
-      .circuit(1)
       .duration(60)
       .EUt(LV)
   })
@@ -1764,7 +1763,6 @@ let recipeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
       .itemInputs(`tfc:rock/loose/${stone}`)
       .itemOutputs(`gtceu:${stone}_dust`)
       .chancedOutput(`gtceu:${stone}_dust`, 1000, 1)
-      .circuit(4)
       .duration(60)
       .EUt(LV)
   })
@@ -2157,10 +2155,6 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
     R: "tfc:rock/raw/marble"
   })
 
-  event.recipes.kubejs.shaped("2x minecraft:dripstone_block", ["PPP", "PRP", "PPP"], {
-    P: "gtceu:stone_dust",
-    R: "tfc:rock/raw/claystone"
-  })
 
   //honey
 

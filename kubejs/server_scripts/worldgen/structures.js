@@ -130,6 +130,7 @@ const jigsawReplacementMap = {
 }
 
 const replaceVanillaBlocks = (/** @type {Internal.StructureLoadEventJS} */ event) => {
+  if (event.id.startswith("tfc")) { return }
   if (
     event.id.startsWith("sgjourney") ||
     event.id.startsWith("minecraft") ||
