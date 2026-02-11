@@ -45,6 +45,14 @@ const dfcRecipeAddCeramicTile = (/** @type {Internal.RecipesEventJS} */ event) =
       const slab = `${baseBlock}_slab`
       const stairs = `${baseBlock}_stairs`
 
+      // Extractor: 4 tile blocks → 5 tiles (12s = 240 ticks, 480 EU = 2 EU/t)
+      event.recipes.gtceu
+	.extractor(`dfc_ceramic_tile_${type}_${color}_extract`)
+	.itemInputs(`4x ${baseBlock}`)
+	.itemOutputs('5x dfc:ceramic/tile')
+	.duration(240)
+	.EUt(2)
+
       // Cutter with water: base block → 2 slabs (4s = 80 ticks, 640 EU = 8 EU/t)
       event.recipes.gtceu
         .cutter(`dfc_${type}_${color}_tile_slab_water`)

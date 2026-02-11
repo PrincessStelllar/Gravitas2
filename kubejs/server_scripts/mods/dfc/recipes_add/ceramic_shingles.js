@@ -33,10 +33,20 @@ const dfcRecipeAddCeramicShingles = (/** @type {Internal.RecipesEventJS} */ even
   // === CERAMIC SHINGLE BLOCK PROCESSING ===
 
   dfcTileColors.forEach(color => {
+    const baseBlock = `dfc:ceramic/shingles/${color}`
+
+    // Extractor: shingles → shingle (3s = 60 ticks, 120 EU = 2 EU/t)
+      event.recipes.gtceu
+	.extractor(`dfc_shingles_${color}_extract`)
+	.itemInputs(baseBlock)
+	.itemOutputs('dfc:ceramic/shingle')
+	.duration(60)
+	.EUt(2)
+    
     // Macerator: base block → 4 brick dust (3s = 60 ticks, 120 EU = 2 EU/t)
     event.recipes.gtceu
       .macerator(`dfc_shingle_${color}_dust`)
-      .itemInputs(`dfc:ceramic/shingles/${color}`)
+      .itemInputs(baseBlock)
       .itemOutputs('4x gtceu:brick_dust')
       .duration(60)
       .EUt(2)

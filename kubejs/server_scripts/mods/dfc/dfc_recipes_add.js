@@ -6,4 +6,7 @@ const dfcRecipesAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
   dfcRecipeAddColoredBricks(event)
   dfcRecipeAddCeramicTile(event)
   dfcRecipeAddCeramicShingles(event)
+  dfcRecipeAddTerracottaTiles(event)
+  dfcRecipeAddTerracottaBricks(event)
+  dfcRecipeAddTerracottaShingles(event)
 }
