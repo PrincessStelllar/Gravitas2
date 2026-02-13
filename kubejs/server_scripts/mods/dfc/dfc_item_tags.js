@@ -83,4 +83,7 @@ let dfcAddItemTags = (/** @type {TagEvent.Item} */ event) => {
   allStones.forEach(stone => {
     event.add('gregitas:stone_pillars', `dfc:rock/pillar/${stone}`)
   })
+
+  // Concrete blocks tag for dyeing and bleaching
+  event.add('forge:concretes', 'dfc:concrete/smooth/plain')
 }

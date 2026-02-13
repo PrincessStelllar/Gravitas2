@@ -18,4 +18,13 @@ const dfcRecipesRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: 'dfc:quern/gypsum_powder' })
   event.remove({ output: 'dfc:powder/gypsum' })
   event.remove({ id: 'dfc:barrel/plaster' })
+
+  // Remove DFC concrete barrel recipes (will remake with vanilla concrete)
+  dfcColors.forEach(color => {
+    event.remove({ id: `dfc:barrel/concrete/smooth/${color}` })
+  })
+  event.remove({ id: 'dfc:barrel/concrete/smooth/bleach' })
+
+  // Remove default GT concrete bleaching recipe (will remake with plain concrete output)
+  event.remove({ id: 'gtceu:chemical_bath/decolor_concrete' })
 }
