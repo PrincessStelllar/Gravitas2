@@ -13,4 +13,9 @@ const dfcRecipesRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   dfcAllMetals.forEach((metal) => {
     event.remove({ output: `dfc:metal/powder/${metal}` })
   })
+
+  // Remove DFC gypsum powder recipes
+  event.remove({ id: 'dfc:quern/gypsum_powder' })
+  event.remove({ output: 'dfc:powder/gypsum' })
+  event.remove({ id: 'dfc:barrel/plaster' })
 }

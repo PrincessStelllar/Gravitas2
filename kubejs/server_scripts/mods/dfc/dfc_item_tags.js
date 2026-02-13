@@ -57,4 +57,30 @@ let dfcAddItemTags = (/** @type {TagEvent.Item} */ event) => {
   dfcColors.forEach(color => {
     event.add('gregitas:terracotta_shingles', `dfc:ceramic/shingles/terracotta_${color}`)
   })
+
+  // Plaster block tags for bleaching
+
+  dfcColors.forEach(color => {
+    event.add('gregitas:plaster_blocks/smooth', `dfc:plaster/smooth/${color}`)
+    event.add('gregitas:plaster_slabs/smooth', `dfc:plaster/smooth/${color}_slab`)
+    event.add('gregitas:plaster_stairs/smooth', `dfc:plaster/smooth/${color}_stairs`)
+    event.add('gregitas:plaster_blocks/pillar', `dfc:plaster/pillar/${color}`)
+  })
+
+  // Stone pillar tags for plaster recipes
+
+  const tfcStones = [
+    'granite', 'diorite', 'gabbro', 'shale', 'claystone', 'limestone',
+    'conglomerate', 'dolomite', 'chert', 'chalk', 'rhyolite', 'basalt',
+    'andesite', 'dacite', 'quartzite', 'slate', 'phyllite', 'schist',
+    'gneiss', 'marble'
+  ]
+
+  const dfcStones = ['serpentine', 'travertine', 'arkose', 'blueschist', 'tuff']
+
+  const allStones = tfcStones.concat(dfcStones)
+
+  allStones.forEach(stone => {
+    event.add('gregitas:stone_pillars', `dfc:rock/pillar/${stone}`)
+  })
 }

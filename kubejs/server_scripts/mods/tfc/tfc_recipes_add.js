@@ -84,4 +84,17 @@ const tfcRecipesAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     .itemOutputs('2x tfc:metal/rod/cast_iron')
     .duration(100)
     .EUt(8)
+
+  // === GYPSUM ORE PROCESSING ===
+
+  // TFC Quern: tfc:ore/gypsum → gtceu:gypsum_dust
+  event.custom({
+    type: 'tfc:quern',
+    ingredient: {
+      item: 'tfc:ore/gypsum'
+    },
+    result: {
+      item: 'gtceu:gypsum_dust'
+    }
+  }).id('gregitas:quern/gypsum_ore')
 }

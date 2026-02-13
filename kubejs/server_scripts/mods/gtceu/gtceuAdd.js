@@ -944,6 +944,26 @@ let gtceuAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     .EUt(LV)
     .duration(80)
 
+  // === GYPSUM ORE PROCESSING ===
+
+  // Macerator: tfc:ore/gypsum → gtceu:gypsum_dust
+  // 800 EU over 20 seconds = 2 EU/t × 400 ticks
+  event.recipes.gtceu
+    .macerator('tfc_gypsum_ore_macerate')
+    .itemInputs('tfc:ore/gypsum')
+    .itemOutputs('gtceu:gypsum_dust')
+    .duration(400)
+    .EUt(2)
+
+  // Forge Hammer: tfc:ore/gypsum → gtceu:gypsum_dust
+  // 160 EU over 0.5 seconds = 16 EU/t × 10 ticks
+  event.recipes.gtceu
+    .forge_hammer('tfc_gypsum_ore_hammer')
+    .itemInputs('tfc:ore/gypsum')
+    .itemOutputs('gtceu:gypsum_dust')
+    .duration(10)
+    .EUt(16)
+
   //milk vinegar
 
   //couldnt get fluidtags/array stuff to work with fluids

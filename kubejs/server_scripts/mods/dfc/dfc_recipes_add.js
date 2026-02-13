@@ -9,4 +9,5 @@ const dfcRecipesAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
   dfcRecipeAddTerracottaTiles(event)
   dfcRecipeAddTerracottaBricks(event)
   dfcRecipeAddTerracottaShingles(event)
+  dfcRecipeAddPlasterBlocks(event)
 }
