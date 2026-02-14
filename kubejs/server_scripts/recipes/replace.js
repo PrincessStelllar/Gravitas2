@@ -382,5 +382,8 @@ event.replaceInput(
   event.replaceInput({ id: "advanced_ae:quantum_leggings"}, "minecraft:netherite_leggings", "gtceu:titanium_leggings")
   event.replaceInput({ id: "advanced_ae:quantum_boots"}, "minecraft:netherite_boots", "gtceu:titanium_boots")
 
+  event.replaceInput({ id: "simpleradio:spuddie_talkie"}, "minecraft:potato", "tfc:food/potato")
+  event.replaceInput({ id: "simpleradio:spuddie_talkie"}, "minecraft:iron_ingot", "createadditions:redstone_relay")
+  event.replaceInput({ id: "simpleradio:spuddie_talkie"}, "simpleradio:copper_wire", "gtceu:fine_copper_wire")
 }
 
