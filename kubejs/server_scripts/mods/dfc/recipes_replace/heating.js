@@ -1,17 +1,22 @@
 // priority 10
 
 const dfcRecipesReplaceHeating = (/** @type {Internal.RecipesEventJS} */ event) => {
-  const dfcMetals = dfcAllMetals.map(function(metalName) {
-    const heatingData = global.metalHeatingData[metalName]
-    if (!heatingData) {
-      console.error(`Missing heating data for metal: ${metalName}`)
-      return null
-    }
-    return { metal: metalName, fluid: heatingData.fluid, temp: heatingData.temp }
-  }).filter(function(m) { return m !== null })
+  const dfcMetals = dfcAllMetals
+    .filter(function(metalName) { return metalName !== 'platinum' }) // Platinum should not melt
+    .map(function(metalName) {
+      const heatingData = global.metalHeatingData[metalName]
+      if (!heatingData) {
+        console.error(`Missing heating data for metal: ${metalName}`)
+        return null
+      }
+      return { metal: metalName, fluid: heatingData.fluid, temp: heatingData.temp }
+    }).filter(function(m) { return m !== null })
 
-  const blockMetals = ["lead", "platinum", "pewter", "aluminum", "alumina"]
+  const blockMetals = ["lead", "pewter", "aluminum", "alumina"]
   const variants = ["smooth", "cut", "bricks", "pillar"]
+
+  // Remove platinum heating recipes (platinum should not melt)
+  event.remove({ id: /^dfc:heating\/metal\/platinum\/.+$/ })
 
   // Correct and add melt values for all DFC metal block variants
   dfcMetals.forEach(function(metalData) {
