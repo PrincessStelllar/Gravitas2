@@ -385,5 +385,7 @@ event.replaceInput(
   event.replaceInput({ id: "simpleradio:spuddie_talkie"}, "minecraft:potato", "tfc:food/potato")
   event.replaceInput({ id: "simpleradio:spuddie_talkie"}, "minecraft:iron_ingot", "createadditions:redstone_relay")
   event.replaceInput({ id: "simpleradio:spuddie_talkie"}, "simpleradio:copper_wire", "gtceu:fine_copper_wire")
+
+  event.replaceInput({ id: "nuclearcraft:manufactory/sugar_cane"}, "minecraft:sugar_cane", "gtceu:bio_chaff")
 }
 
