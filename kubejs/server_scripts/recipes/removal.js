@@ -653,15 +653,23 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "gtceu:chemical_reactor/ultra_high_grade_hypogen_separation_agent"})
 
   //Coins
-  event.remove({ id: `/^createdeco:pressing\/coins\/.*_coin/`})
+  event.remove({ id: /^createdeco:pressing\/coins\/.*_coin/})
   event.remove({ id: "workerstfc:anvil/coins1"})
   event.remove({ id: "workerstfc:anvil/coins2"})
   event.remove({ id: "workerstfc:anvil/coins3"})
   event.remove({ id: "workerstfc:anvil/coins4"})
 
-
   //Misc
-  event.remove({ id: "tfc_ie_addon:welding/aluminum_double_ingot"})
   event.remove({ id: "create:milling/bone"})
   event.remove({ id: "minecraft:brewing_stand"})
+  event.remove({ id: "tfc_ie_addon:welding/aluminum_double_ingot"})
+  event.remove({ id: "tfc_ie_addon:crafting/metal/block/uranium"})
+  event.remove({ id: "nuclearcraft:alloy_smelter/dusts_steel-dusts_chromium"})
+  event.remove({ id: "nuclearcraft:alloy_smelter/ingots_steel-ingots_chromium"})
+  event.remove({ id: "farmersdelight:sweet_berry_cheesecake"})
+  event.remove({ id: "farmersdelight:pie_crust"})
+  event.remove({ id: "farmersdelight:integration/create/mixing/pie_crust_from_mixing"})
+  event.remove({ id: `/^woodencog:heated_mixing\/food\/jams\/*._4/`})
+  event.remove({ id: `/^woodencog:heated_mixing\/food\/jams\/*._3/`})
+  event.remove({ id: "farmersdelight:cutting/saddle"})
 }

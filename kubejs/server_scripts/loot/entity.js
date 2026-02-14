@@ -11,4 +11,7 @@ let modifyAndRemoveEntityLoot = (/** @type {Internal.LootModificationEventJS} */
   event.addLootTypeModifier([LootType.ENTITY]).replaceLoot("cooked_mutton", "tfc:food/cooked_mutton")
 
   event.addLootTypeModifier([LootType.ENTITY]).replaceLoot(`/^.*_wool/`, "tfc:wool")
+  event.addEntityLootModifier("tfc:horse").addLoot("gregitas:equine_hoof")
+  event.addEntityLootModifier("tfc:donkey").addLoot("gregitas:equine_hoof")
+  event.addEntityLootModifier("tfc:mule").addLoot("gregitas:equine_hoof")
 }

@@ -1753,7 +1753,6 @@ let recipeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
       .itemInputs(`tfc:rock/loose/${stone}`)
       .itemOutputs(`gregitas_core:${stone}_dust`)
       .chancedOutput(`gregitas_core:${stone}_dust`, 1000, 1)
-      .circuit(1)
       .duration(60)
       .EUt(LV)
   })
@@ -1764,7 +1763,6 @@ let recipeAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
       .itemInputs(`tfc:rock/loose/${stone}`)
       .itemOutputs(`gtceu:${stone}_dust`)
       .chancedOutput(`gtceu:${stone}_dust`, 1000, 1)
-      .circuit(4)
       .duration(60)
       .EUt(LV)
   })
@@ -2157,10 +2155,6 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
     R: "tfc:rock/raw/marble"
   })
 
-  event.recipes.kubejs.shaped("2x minecraft:dripstone_block", ["PPP", "PRP", "PPP"], {
-    P: "gtceu:stone_dust",
-    R: "tfc:rock/raw/claystone"
-  })
 
   //honey
 
@@ -2972,4 +2966,12 @@ event.recipes.create.crushing([`2x minecraft:gray_dye`], `gtceu:stone_dust`, 250
          event.recipes.vintage.polishing("minecraft:" + vanTree.id + "_door", vanTree.namespace + ":wood/planks/" + vanTree.replace + "_door", 300,8) 
 
         })
+
+    event.recipes.gtceu
+    .macerator("gregitas:saltpeter_from_crystal")
+    .itemInputs("immersivegeology:crystal_saltpeter")
+    .itemOutputs("gtceu:saltpeter_dust")
+    .chancedOutput("gtceu:saltpeter_dust", 420, 1)
+    .duration(180)
+    .EUt(80)    
 }

@@ -518,4 +518,12 @@ const addItemTags = (/** @type {TagEvent.Item} */ event) => {
   event.add("forge:sheets/cast_iron", "tfc:metal/sheet/cast_iron")
   event.add("forge:double_sheets", "tfc:metal/double_sheet/cast_iron")
   event.add("forge:double_sheets/cast_iron", "tfc:metal/double_sheet/cast_iron")
+
+  //armors
+  event.removeAll("tombstone:lootable/armor")
+  event.removeAll("tombstone:lootable/vanilla_armor")
+  
+  //tools
+  event.removeAll("tombstone:lootable/tool")
+  event.removeAll("tombstone:lootable/vanilla_tool")
 }

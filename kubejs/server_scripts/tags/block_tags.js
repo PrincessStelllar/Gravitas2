@@ -254,4 +254,8 @@ const addBlockTags = (/** @type {TagEvent.Block} */ event) => {
     ]
   )
   event.add('create:chest_mounted_storage', /tfc:wood\/.*chest\/.*/)
+  event.remove("minecraft:needs_iron_tool", "sgjourney:transport_rings")
+  event.add("minecraft:needs_netherite_tool", "sgjourney:transport_rings")
+    event.remove("minecraft:needs_iron_tool", "sgjourney:ring_panel")
+  event.add("minecraft:needs_netherite_tool", "sgjourney:ring_panel")
 }

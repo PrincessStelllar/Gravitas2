@@ -291,6 +291,9 @@ const gtToolPolymers = [
 ]
 
 let registerItems = (/** @type {Registry.Item} */ event) => {
+  // medieval glue source
+  event.create("gregitas:equine_hoof").texture("gregitas:item/equine_hoof").color(0, 0x402000)
+
   //GTCEu
   event.create("gregitas:creosote_treated_lumber").texture("kubejs:item/lumber").color(0x502800)
   event.create("gregitas:rubber_lumber").texture("kubejs:item/lumber").color(0x615232)

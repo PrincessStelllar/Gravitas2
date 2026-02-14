@@ -22,7 +22,28 @@ let gtceuAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
       ]
     })
     .id("gregitas:pot/sticky_resin")
-
+  
+    event
+    .custom({
+      type: "tfc:pot",
+      ingredients: [
+        {
+          item: "gregitas:equine_hoof"
+        }
+      ],
+      fluid_ingredient: {
+        ingredient: "minecraft:water",
+        amount: 1000
+      },
+      duration: 3000,
+      temperature: 300,
+      item_output: [
+        {
+          item: "tfc:glue"
+        }
+      ]
+    })
+    .id("gregitas:pot/glue")
   event
     .custom({
       type: "firmalife:vat",
@@ -1483,4 +1504,128 @@ let gtceuAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     .itemOutputs("5x minecraft:brick")
     .duration(60)
     .EUt(2)
+
+    //Rock and Stone!
+ 
+  tfcStone.forEach((stone) => {
+    event.recipes.gtceu
+      .rock_breaker(`loose_${stone}`)
+      .notConsumable(`tfc:rock/loose/${stone}`)
+      .itemOutputs(`tfc:rock/loose/${stone}`)
+      .duration(16)
+      .EUt(LV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')
+
+    event.recipes.gtceu
+      .rock_breaker(`cobble_${stone}`)
+      .notConsumable(`tfc:rock/cobble/${stone}`)
+      .itemOutputs(`tfc:rock/cobble/${stone}`)
+      .duration(16)
+      .EUt(LV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')  
+
+    event.recipes.gtceu
+      .rock_breaker(`raw_${stone}`)
+      .notConsumable(`tfc:rock/raw/${stone}`)
+      .itemOutputs(`tfc:rock/raw/${stone}`)
+      .duration(16)
+      .EUt(LV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')    
+  })
+
+  // DFC stones
+  const dfcStones = ["travertine", "blueschist", "arkose", "tuff", "serpentine"]
+
+  dfcStones.forEach((stone) => {
+    event.recipes.gtceu
+      .rock_breaker(`dfc_raw_${stone}`)
+      .notConsumable(`dfc:rock/raw/${stone}`)
+      .itemOutputs(`dfc:rock/raw/${stone}`)
+      .duration(16)
+      .EUt(LV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')
+  })
+
+  //deepslate
+ 
+  event.recipes.gtceu
+    .rock_breaker("chep_deepslate")
+    .notConsumable("minecraft:deepslate")
+    .itemOutputs("minecraft:deepslate")
+    .adjacentFluids('minecraft:water')
+    .adjacentFluids('minecraft:lava')
+    .duration(16)
+    .EUt(24)
+ 
+//createrocks
+ 
+  createstone.forEach((createstone) => {
+    event.recipes.gtceu
+      .rock_breaker(`raw_${createstone}`)
+      .notConsumable(`create:${createstone}`)
+      .itemOutputs(`create:${createstone}`)
+      .duration(16)
+      .EUt(MV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')
+  })
+ 
+  createstonec.forEach((createstonec) => {
+    event.recipes.gtceu
+      .rock_breaker(`raw_${createstonec}`)
+      .notConsumable(`create:${createstonec}`)
+      .itemOutputs(`create:${createstonec}`)
+      .duration(16)
+      .EUt(MV)
+      .adjacentFluids('minecraft:lava')
+      .adjacentFluids('firmalife:chocolate')
+  })
+ 
+  createstoneh.forEach((createstoneh) => {
+    event.recipes.gtceu
+      .rock_breaker(`raw_${createstoneh}`)
+      .notConsumable(`create:${createstoneh}`)
+      .itemOutputs(`create:${createstoneh}`)
+      .duration(16)
+      .EUt(MV)
+      .adjacentFluids('minecraft:lava')
+      .adjacentFluids('create:honey')
+  })
+ 
+  createstoneh.forEach((createstoneh) => {
+    event.recipes.gtceu
+      .rock_breaker(`minecraft:dripstone_block`)
+      .notConsumable(`minecraft:dripstone_block`)
+      .itemOutputs(`minecraft:dripstone_block`)
+      .duration(16)
+      .EUt(MV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')
+  })
+ 
+  createstonecut.forEach((createstonecut) => {
+    event.recipes.gtceu
+      .rock_breaker(`cut_${createstonecut}`)
+      .notConsumable(`create:cut_${createstonecut}`)
+      .itemOutputs(`create:cut_${createstonecut}`)
+      .duration(16)
+      .EUt(MV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')
+  })
+ 
+  createstonevanilla.forEach((createstonevanilla) => {
+    event.recipes.gtceu
+      .rock_breaker(`raw_${createstonevanilla}`)
+      .notConsumable(`minecraft:${createstonevanilla}`)
+      .itemOutputs(`minecraft:${createstonevanilla}`)
+      .duration(16)
+      .EUt(MV)
+      .adjacentFluids('minecraft:water')
+      .adjacentFluids('minecraft:lava')
+  })
 }

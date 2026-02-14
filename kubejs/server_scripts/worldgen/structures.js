@@ -130,6 +130,7 @@ const jigsawReplacementMap = {
 }
 
 const replaceVanillaBlocks = (/** @type {Internal.StructureLoadEventJS} */ event) => {
+  if (event.id.startsWith("tfc")) { return }
   if (
     event.id.startsWith("sgjourney") ||
     event.id.startsWith("minecraft") ||
@@ -137,11 +138,13 @@ const replaceVanillaBlocks = (/** @type {Internal.StructureLoadEventJS} */ event
     event.id.startsWith("apotheosis") ||
     event.id.startsWith("waystones") ||
     event.id.startsWith("immersiveengineering") ||
-    event.id.startswith("railcraft") ||
+    event.id.startsWith("immersivegeology") ||
+    event.id.startsWith("railcraft") ||
     event.id.startsWith("ae2") ||
     event.id.startsWith("iceandfire") ||
     event.id.startsWith("scguns") ||
-    event.id.startsWith("tombstone")
+    event.id.startsWith("tombstone") ||
+    event.id.startsWith("nuclearcraft") 
   ) {
     event.forEachPalettes((palette) => {
       palette.forEach((struc) => {
