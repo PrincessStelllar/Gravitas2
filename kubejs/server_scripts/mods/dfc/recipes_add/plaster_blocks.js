@@ -64,7 +64,7 @@ const dfcRecipeAddPlasterBlocks = (/** @type {Internal.RecipesEventJS} */ event)
 
   // Stone pillars
   event.recipes.create
-    .filling('dfc:plaster/pillar/plain', ['#gregitas:stone_pillars', Fluid.of('dfc:plaster', 40)])
+    .filling('dfc:plaster/pillar/plain', ['#dfc:rock/pillars', Fluid.of('dfc:plaster', 40)])
     .id('gregitas:filling/plaster_pillar_from_stone')
   
   // === PLAIN PLASTER BLOCKS FROM WOOD ===
@@ -130,7 +130,7 @@ const dfcRecipeAddPlasterBlocks = (/** @type {Internal.RecipesEventJS} */ event)
   // Chemical Bath: stone pillar + plaster → plain plaster pillar (5s = 100 ticks, 800 EU = 8 EU/t)
   event.recipes.gtceu
     .chemical_bath('plaster_pillar_from_stone')
-    .itemInputs('#gregitas:stone_pillars')
+    .itemInputs('#dfc:rock/pillars')
     .inputFluids(Fluid.of('dfc:plaster', 40))
     .itemOutputs('dfc:plaster/pillar/plain')
     .duration(100)

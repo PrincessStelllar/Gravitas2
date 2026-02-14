@@ -459,4 +459,10 @@ let registerItems = (/** @type {Registry.Item} */ event) => {
     .displayName("Terracotta Shingle")
     .texture("kubejs:item/terracotta_shingle")
 
+  // Leaded glass dust for GT-DFC integration
+  event.create("gregitas:leaded_glass_dust")
+    .displayName("Leaded Glass Dust")
+    .texture("gtceu:item/material_sets/dull/dust")
+    .color(0, 0x8a8097)
+
 }

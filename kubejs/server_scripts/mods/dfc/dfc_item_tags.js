@@ -67,23 +67,21 @@ let dfcAddItemTags = (/** @type {TagEvent.Item} */ event) => {
     event.add('gregitas:plaster_blocks/pillar', `dfc:plaster/pillar/${color}`)
   })
 
-  // Stone pillar tags for plaster recipes
-
-  const tfcStones = [
-    'granite', 'diorite', 'gabbro', 'shale', 'claystone', 'limestone',
-    'conglomerate', 'dolomite', 'chert', 'chalk', 'rhyolite', 'basalt',
-    'andesite', 'dacite', 'quartzite', 'slate', 'phyllite', 'schist',
-    'gneiss', 'marble'
-  ]
-
-  const dfcStones = ['serpentine', 'travertine', 'arkose', 'blueschist', 'tuff']
-
-  const allStones = tfcStones.concat(dfcStones)
-
-  allStones.forEach(stone => {
-    event.add('gregitas:stone_pillars', `dfc:rock/pillar/${stone}`)
-  })
-
   // Concrete blocks tag for dyeing and bleaching
   event.add('forge:concretes', 'dfc:concrete/smooth/plain')
+
+  // Leaded glass tags for dyeing and bleaching
+  dfcTileColors.forEach(color => {
+    event.add('gregitas:leaded_glass_blocks', `dfc:glass/block/leaded/${color}`)
+    event.add('gregitas:leaded_glass_panes', `dfc:glass/pane/leaded/${color}`)
+  })
+
+  // Glass brick tags for dyeing and bleaching
+  dfcTileColors.forEach(color => {
+    event.add('gregitas:glass_brick_items', `dfc:glass/brick/${color}`)
+    event.add('gregitas:glass_brick_blocks', `dfc:glass/block/bricks/${color}`)
+    event.add('gregitas:glass_brick_panes', `dfc:glass/pane/bricks/${color}`)
+    event.add('gregitas:glass_brick_tiles', `dfc:glass/block/tiles/${color}`)
+    event.add('gregitas:glass_brick_tile_panes', `dfc:glass/pane/tiles/${color}`)
+  })
 }

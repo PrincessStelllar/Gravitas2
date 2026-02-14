@@ -1,5 +1,34 @@
 const dfcRecipeAddConcrete = (/** @type {Internal.RecipesEventJS} */ event) => {
 
+  // === CONCRETE ITEM CREATION ===
+
+  // Fluid Solidifier: liquid concrete + ingot mold → concrete brick item (3.9s = 78 ticks, 546 EU = 7 EU/t)
+  event.recipes.gtceu
+    .fluid_solidifier('concrete_brick_item')
+    .inputFluids('gtceu:concrete 115')
+    .notConsumable('gtceu:ingot_casting_mold')
+    .itemOutputs('dfc:concrete/brick')
+    .duration(78)
+    .EUt(7)
+
+  // Fluid Solidifier: liquid concrete + plate mold → concrete slab item (3.9s = 78 ticks, 546 EU = 7 EU/t)
+  event.recipes.gtceu
+    .fluid_solidifier('concrete_slab_item')
+    .inputFluids('gtceu:concrete 115')
+    .notConsumable('gtceu:plate_casting_mold')
+    .itemOutputs('dfc:concrete/slab')
+    .duration(78)
+    .EUt(7)
+
+  // Assembler: TFC aggregate + liquid concrete → plain concrete block (5s = 100 ticks, 3000 EU = 30 EU/t)
+  event.recipes.gtceu
+    .assembler('concrete_block_from_aggregate')
+    .itemInputs('tfc:aggregate')
+    .inputFluids('gtceu:concrete 144')
+    .itemOutputs('dfc:concrete/smooth/plain')
+    .duration(100)
+    .EUt(30)
+
   // === CONCRETE DYEING ===
 
   // Chemical Bath: any concrete + white dye → white concrete (1s = 20 ticks, 140 EU = 7 EU/t)

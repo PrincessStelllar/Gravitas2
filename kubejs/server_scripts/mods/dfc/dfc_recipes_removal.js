@@ -27,4 +27,18 @@ const dfcRecipesRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
 
   // Remove default GT concrete bleaching recipe (will remake with plain concrete output)
   event.remove({ id: 'gtceu:chemical_bath/decolor_concrete' })
+
+  // Remove DFC glass pane crafting recipes (prefer cutter/saw recipes)
+  const glassTypes = ['bricks', 'tiles']
+  glassTypes.forEach(type => {
+    dfcTileColors.concat('foggy').forEach(color => {
+      event.remove({ id: `dfc:crafting/glass/panes/${type}/${color}` })
+    })
+  })
+
+  // Remove DFC glass brick and tile block recipes (will remake with more output)
+  event.remove({ output: 'dfc:glass/block/bricks/plain' })
+  event.remove({ output: 'dfc:glass/block/tiles/plain' })
+  event.remove({ output: 'dfc:glass/block/bricks/foggy' })
+  event.remove({ output: 'dfc:glass/block/tiles/foggy' })
 }
