@@ -146,11 +146,23 @@ const dfcRecipeAddPlasterBlocks = (/** @type {Internal.RecipesEventJS} */ event)
   ]
 
   plasterVariants.forEach(variant => {
+    // Determine the appropriate tag for this variant
+    let tagName = ''
+    if (variant.name === 'smooth' && variant.suffix === '') {
+      tagName = '#gregitas:plaster_blocks/smooth'
+    } else if (variant.name === 'smooth' && variant.suffix === '_stairs') {
+      tagName = '#gregitas:plaster_stairs/smooth'
+    } else if (variant.name === 'smooth' && variant.suffix === '_slab') {
+      tagName = '#gregitas:plaster_slabs/smooth'
+    } else if (variant.name === 'pillar' && variant.suffix === '') {
+      tagName = '#gregitas:plaster_blocks/pillar'
+    }
+
     dfcColors.forEach(color => {
-      // Chemical Bath: plain plaster + GT dye → colored plaster (1s = 20 ticks, 140 EU = 7 EU/t)
+      // Chemical Bath: any plaster + GT dye → colored plaster (1s = 20 ticks, 140 EU = 7 EU/t)
       event.recipes.gtceu
         .chemical_bath(`plaster_${variant.name}_dye_${color}${variant.suffix}`)
-        .itemInputs(`dfc:plaster/${variant.name}/plain${variant.suffix}`)
+        .itemInputs(tagName)
         .inputFluids(Fluid.of(`gtceu:${color}_dye`, 18))
         .itemOutputs(`dfc:plaster/${variant.name}/${color}${variant.suffix}`)
         .duration(20)
@@ -160,7 +172,7 @@ const dfcRecipeAddPlasterBlocks = (/** @type {Internal.RecipesEventJS} */ event)
       event.custom({
         type: 'tfc:barrel_sealed',
         input_item: {
-          ingredient: { item: `dfc:plaster/${variant.name}/plain${variant.suffix}` }
+          ingredient: { tag: tagName.substring(1) }
         },
         input_fluid: {
           ingredient: `tfc:${color}_dye`,
