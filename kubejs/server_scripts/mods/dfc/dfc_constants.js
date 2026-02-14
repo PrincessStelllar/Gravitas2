@@ -20,3 +20,7 @@ const dfcReplaceableMetals = [
 const dfcMetalsToRemove = ["lead", "aluminum", "alumina", "platinum"]
 
 const dfcAllMetals = dfcReplaceableMetals.concat(["cast_iron", "pewter", "alumina"])
+
+const dfcOresToRemove = ["galena", "bauxite", "native_platinum", "native_aluminum"]
+
+const tfcOreTypes = ["small", "rich", "poor", "normal"]

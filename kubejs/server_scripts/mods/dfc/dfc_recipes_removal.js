@@ -7,12 +7,26 @@ const dfcRecipesRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
     event.remove({ id: `dfc:anvil/${metal}_sheet` })
     event.remove({ id: `dfc:welding/${metal}_double_sheet` })
     event.remove({ id: `dfc:anvil/${metal}_rod` })
+    event.remove({ id: `dfc:heating/metal/${metal}/ingot` })
+    event.remove({ id: `dfc:heating/metal/${metal}/double_ingot` })
+    event.remove({ id: `dfc:heating/metal/${metal}/sheet` })
+    event.remove({ id: `dfc:heating/metal/${metal}/double_sheet` })
+    event.remove({ id: `dfc:heating/metal/${metal}/rod` })
+    event.remove({ id: `dfc:heating/metal/${metal}/powder` })
   })
+  event.remove({ id: `dfc:heating/metal/pewter/powder` })
 
+  tfcOreTypes.forEach((type) => {
+    dfcOresToRemove.forEach((ore) => {
+      event.remove({ id: `dfc:heating/ore/${type}_${ore}`})
+    })
+  })
   // DFC - remove all recipes outputting DFC powders
   dfcAllMetals.forEach((metal) => {
     event.remove({ output: `dfc:metal/powder/${metal}` })
   })
+
+  event.remove('dfc:blast_furnace/aluminum')
 
   // Remove DFC gypsum powder recipes
   event.remove({ id: 'dfc:quern/gypsum_powder' })
@@ -41,4 +55,7 @@ const dfcRecipesRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ output: 'dfc:glass/block/tiles/plain' })
   event.remove({ output: 'dfc:glass/block/bricks/foggy' })
   event.remove({ output: 'dfc:glass/block/tiles/foggy' })
+
+  // Remove DFC pewter alloy recipe (will remake with correct metal ids)
+  event.remove({ id: 'dfc:alloy/pewter' })
 }
