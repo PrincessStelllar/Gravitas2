@@ -463,7 +463,7 @@ let registerItems = (/** @type {Registry.Item} */ event) => {
   event.create("gregitas:leaded_glass_dust")
     .displayName("Leaded Glass Dust")
     .texture("gtceu:item/material_sets/dull/dust")
-    .color(0, 0x8a8097)
+    .color(0, 0x938e98)
 
   // Pewter dust for GT-DFC integration
   event.create("gregitas:pewter_dust")

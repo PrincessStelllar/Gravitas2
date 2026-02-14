@@ -11,5 +11,5 @@ let registerFluids = (/** @type {Registry.Fluid} */ event) => {
   event.create("gregitas:iced_pina_colada").thickTexture(0xffffaa).displayName("Iced Piña Colada")
 
   // Leaded glass fluid for GT-DFC integration
-  event.create("gregitas:leaded_glass").thinTexture(0x8a8097).displayName("Molten Leaded Glass")
+  event.create("gregitas:leaded_glass").thinTexture(0x938e98).displayName("Molten Leaded Glass")
 }
