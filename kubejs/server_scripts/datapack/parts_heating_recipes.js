@@ -229,7 +229,7 @@ let addTFCPartHeatingRecipes = (/** @type {Internal.DataPackEventJS} */ event) =
 			if( partHeatingDebug ){ console.info("Part not found !") }
 		}
 	}
-	
+	addTFCHeatCapability("tfc:plant/leafy_kelp", 1.0)
 	// GT metals with existing support for plates and rods. Will need to be skipped to avoid duplicate recipes.
 	let GT_metalsWithHeating = [
 		"wrought_iron", "gold", "copper", "tin", "bismuth", "nickel", "silver", "zinc",
@@ -352,8 +352,7 @@ let addTFCPartHeatingRecipes = (/** @type {Internal.DataPackEventJS} */ event) =
 			})
 		})
 	})
-	addTFCHeatCapability("tfc:food/dried_kelp",300)
-	
+
 	// All the other parts:
 	let parts = [
 		// Nuggets
