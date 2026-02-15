@@ -2,7 +2,9 @@
 
 ServerEvents.recipes((event) => {
   recipeRemoval(event)
+  dfcRecipesRemoval(event)
   replaceRecipes(event)
+  dfcRecipesReplace(event)
   recipeAdd(event)
   replaceTFCHeatingAndCasting(event)
   addCollapse(event)
@@ -11,6 +13,8 @@ ServerEvents.recipes((event) => {
   gtceuAdd(event)
   createAdd(event)
   centrifugeAdd(event)
+  tfcRecipesAdd(event)
+  dfcRecipesAdd(event)
   //oreWashingAdd(event)
   //oreVibratingAdd(event)
   viSulfuricAcid(event)
@@ -46,10 +50,12 @@ ServerEvents.tags("worldgen/biome", (event) => {
 
 ServerEvents.tags("worldgen/placed_feature", (event) => {
   addGregVeinsToTags(event)
+  removeDFCOreVeins(event)
 })
 
 ServerEvents.tags("item", (event) => {
   addItemTags(event)
+  dfcAddItemTags(event)
 })
 ServerEvents.tags("entity", (event) => {
   entityTags(event)
@@ -83,6 +89,7 @@ ServerEvents.lowPriorityData((event) => {
   overrideTFCArmourFinalWeld(event)
   addGregVeinData(event)
   addGenericData(event)
+  overrideTFCWorldPreset(event)
 })
 
 NetworkEvents.dataReceived("customTask", (event) => {
