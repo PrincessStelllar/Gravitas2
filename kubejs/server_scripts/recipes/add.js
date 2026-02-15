@@ -2974,4 +2974,6 @@ event.recipes.create.crushing([`2x minecraft:gray_dye`], `gtceu:stone_dust`, 250
     .chancedOutput("gtceu:saltpeter_dust", 420, 1)
     .duration(180)
     .EUt(80)    
+
+
 }

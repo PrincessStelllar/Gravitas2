@@ -387,5 +387,12 @@ event.replaceInput(
   event.replaceInput({ id: "simpleradio:spuddie_talkie"}, "simpleradio:copper_wire", "gtceu:fine_copper_wire")
   event.replaceInput({ mod: "hang_glider"}, "minecraft:iron_ingot", "#forge:ingots/aluminium")
   event.replaceInput({ id: "nuclearcraft:manufactory/sugar_cane"}, "minecraft:sugar_cane", "gtceu:bio_chaff")
+      //trackwork
+  event.replaceInput({ id: "trackwork:simple_wheel_part" }, "minecraft:dried_kelp", "gtceu:rubber_plate")
+  
+  //VS ClockWork
+  event.replaceInput({ id: "vs_clockwork:crafting/physics/physics_infuser" }, "vs_clockwork:wanderlite_matrix", "gtceu:lv_field_generator")
+  event.replaceInput({ id: "vs_clockwork:crafting/wanderwand" }, "vs_clockwork:wanderlite_matrix", "gtceu:lv_field_generator")
+  event.replaceInput({ id: "vs_clockwork:mechanical_crafting/gravitron" }, "vs_clockwork:wanderlite_matrix", "gtceu:lv_field_generator")
 }
 
