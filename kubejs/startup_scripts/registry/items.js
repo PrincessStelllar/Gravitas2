@@ -449,4 +449,29 @@ let registerItems = (/** @type {Registry.Item} */ event) => {
   event.create("gregitas:crushed_char").texture("kubejs:item/triuranium_octoxide").color(0, 0x111111)
   event.create("gregitas:crushed_frostburn").texture("kubejs:item/triuranium_octoxide").color(0, 0xFFFFFF)
 
+  // DFC custom items
+  event.create("gregitas:terracotta_tile")
+    .displayName("Terracotta Tile")
+    .texture("kubejs:item/terracotta_tile")
+
+  event.create("gregitas:terracotta_brick")
+    .displayName("Terracotta Brick")
+    .texture("kubejs:item/terracotta_brick")
+
+  event.create("gregitas:terracotta_shingle")
+    .displayName("Terracotta Shingle")
+    .texture("kubejs:item/terracotta_shingle")
+
+  // Leaded glass dust for GT-DFC integration
+  event.create("gregitas:leaded_glass_dust")
+    .displayName("Leaded Glass Dust")
+    .texture("gtceu:item/material_sets/dull/dust")
+    .color(0, 0x938e98)
+
+  // Pewter dust for GT-DFC integration
+  event.create("gregitas:pewter_dust")
+    .displayName("Pewter Dust")
+    .texture("gtceu:item/material_sets/dull/dust")
+    .color(0, 0xd3d4bf)
+
 }

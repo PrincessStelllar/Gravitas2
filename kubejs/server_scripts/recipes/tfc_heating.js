@@ -95,4 +95,31 @@ const replaceTFCHeatingAndCasting = (/** @type {Internal.RecipesEventJS} */ even
     },
     temperature: 650
   })
+
+  // Cast Iron part heating recipes
+  const castIronData = global.metalHeatingData["cast_iron"]
+  if (castIronData) {
+    event.remove({ id: 'tfc:heating/metal/sheet/cast_iron' })
+    event.remove({ id: 'tfc:heating/metal/rod/cast_iron' })
+
+    // Sheet: 144 mb (1 ingot worth)
+    if (Item.exists('tfc:metal/sheet/cast_iron')) {
+      event.custom({
+        type: "tfc:heating",
+        ingredient: { item: 'tfc:metal/sheet/cast_iron' },
+        result_fluid: { fluid: castIronData.fluid, amount: 144 },
+        temperature: castIronData.temp
+      }).id('kubejs:tfc/heating/cast_iron_sheet')
+    }
+
+    // Rod: 72 mb (1/2 ingot worth)
+    if (Item.exists('tfc:metal/rod/cast_iron')) {
+      event.custom({
+        type: "tfc:heating",
+        ingredient: { item: 'tfc:metal/rod/cast_iron' },
+        result_fluid: { fluid: castIronData.fluid, amount: 72 },
+        temperature: castIronData.temp
+      }).id('kubejs:tfc/heating/cast_iron_rod')
+    }
+  }
 }

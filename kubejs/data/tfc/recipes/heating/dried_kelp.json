@@ -1,10 +1,10 @@
 {
   "type": "tfc:heating",
   "ingredient": {
-    "item": "tfc:groundcover/seaweed"
+    "item": "tfc:plant/leafy_kelp"
   },
   "result_item": {
-    "item": "tfc:food/dried_seaweed"
+    "item": "tfc:food/dried_kelp"
   },
   "temperature": 200
 }

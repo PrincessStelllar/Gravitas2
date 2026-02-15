@@ -10,6 +10,7 @@ const toolsToRemove = [
   "blue_steel",
   "red_steel"
 ]
+
 function logRecipeCategories() {
   let categories = global.jeiRuntime.recipeManager.createRecipeCategoryLookup().get().toList()
   categories.forEach(category => {
@@ -38,6 +39,8 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "vintage:curving/iron_sheet"})
   event.remove({ id: "vintage:rolling/andesite_plate"})
   event.remove({ id: "vintage:pressing/andesite_alloy"})
+  event.remove({ id: "vintage:pressing/cast_iron_ingot"})
+  event.remove({ id: "vintage:rolling/cast_iron_ingot"})
   // sgjourney
   event.remove({ id: "sgjourney:temp_pure_naquadah_from_blasting" })
   event.remove({ id: "sgjourney:classic_stargate_base_block" })
@@ -54,6 +57,8 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "gtceu:shaped/stick_wrought_iron" })
   event.remove({ id: "gtceu:cutter/cut_glass_block_to_plate_water"})
   event.remove({ id: "gtceu:shaped/stick_long_stick_wrought_iron" })
+  event.remove({ id: "gtceu:compressor/bricks" })
+  event.remove({ id: "gtceu:extractor/bricks_extraction" })
   event.remove({ id: "gtceu:shaped/wire_cutter_wrought_iron" })
   event.remove({ id: "gtceu:shaped/iron_bucket" })
   event.remove({ id: "gtceu:shaped/casing_primitive_bricks"})
