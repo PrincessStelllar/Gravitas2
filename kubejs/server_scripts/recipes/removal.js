@@ -675,4 +675,7 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "nuclearcraft:alloy_smelter/ingots_iron-ingots_carbon_manganese"})
   event.remove({ id: "nuclearcraft:alloy_smelter/dusts_iron-dusts_carbon_manganese"})
   event.remove({ id: "dfc:crafting/alt_fire_clay"})
+
+  event.remove({ id: "immersivegeology:crafting/get_ingot_from_iron_nuggets"})
+  event.remove({ id: "createdieselgenerators:compression_molding/bucket"})
 }
