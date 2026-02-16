@@ -674,4 +674,5 @@ let recipeRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   event.remove({ id: "farmersdelight:cutting/saddle"})
   event.remove({ id: "nuclearcraft:alloy_smelter/ingots_iron-ingots_carbon_manganese"})
   event.remove({ id: "nuclearcraft:alloy_smelter/dusts_iron-dusts_carbon_manganese"})
+  event.remove({ id: "dfc:crafting/alt_fire_clay"})
 }
