@@ -17,7 +17,9 @@ const dfcReplaceableMetals = [
   "blue_steel", "red_steel", "aluminum", "lead", "platinum"
 ]
 
-const dfcMetalsToRemove = ["lead", "aluminum", "alumina", "platinum"]
+const dfcCopyMetals = ["lead", "aluminum", "platinum"] 
+
+const dfcMetals = dfcCopyMetals.concat("alumina")
 
 const dfcAllMetals = dfcReplaceableMetals.concat(["cast_iron", "pewter", "alumina"])
 

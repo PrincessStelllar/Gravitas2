@@ -1,5 +1,5 @@
 const dfcRecipesReplaceMetalBlocks = (/** @type {Internal.RecipesEventJS} */ event) => {
-  
+
   // Map of metals with different naming between DFC and GregTech
   const metalNameMap = {
     "aluminum": "aluminium"
@@ -25,7 +25,10 @@ const dfcRecipesReplaceMetalBlocks = (/** @type {Internal.RecipesEventJS} */ eve
     event.remove({ id: `dfc:crafting/metal/cut/${metal}` })
     event.remove({ id: `dfc:crafting/metal/smooth/${metal}` })
     event.remove({ id: `dfc:crafting/metal/pillar/${metal}` })
-    event.remove({ id: `dfc:crafting/metal/block/${metal}` })
+
+    if (dfcCopyMetals.includes(metal)) {
+      event.remove({ id: `dfc:crafting/metal/block/${metal}` })
+    }
 
     // Recreate with plate tags
     event.custom({
@@ -80,18 +83,20 @@ const dfcRecipesReplaceMetalBlocks = (/** @type {Internal.RecipesEventJS} */ eve
       }
     }).id(`kubejs:dfc/metal/pillar/${metal}`)
 
-    event.custom({
-      type: 'tfc:damage_inputs_shapeless_crafting',
-      recipe: {
-        type: 'minecraft:crafting_shapeless',
-        ingredients: [
-          { tag: `forge:plates/${gtMetal}` },
-          { tag: 'tfc:rock/smooth' },
-          { tag: 'tfc:hammers' }
-        ],
-        result: { item: `dfc:metal/block/${metal}`, count: 8 }
-      }
-    }).id(`kubejs:dfc/metal/block/${metal}`)
+    if (dfcCopyMetals.includes(metal)) {
+      event.custom({
+        type: 'tfc:damage_inputs_shapeless_crafting',
+        recipe: {
+          type: 'minecraft:crafting_shapeless',
+          ingredients: [
+            { tag: `forge:plates/${gtMetal}` },
+            { tag: 'tfc:rock/smooth' },
+            { tag: 'tfc:hammers' }
+          ],
+          result: { item: `dfc:metal/block/${metal}`, count: 8 }
+        }
+      }).id(`kubejs:dfc/metal/block/${metal}`)
+    }
   })
 
 }

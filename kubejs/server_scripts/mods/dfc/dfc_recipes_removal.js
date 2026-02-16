@@ -2,7 +2,7 @@
 
 const dfcRecipesRemoval = (/** @type {Internal.RecipesEventJS} */ event) => {
   // Remove redundant DFC metal recipes
-  dfcMetalsToRemove.forEach((metal) => {
+  dfcMetals.forEach((metal) => {
     event.remove({ id: `dfc:welding/${metal}_double_ingot` })
     event.remove({ id: `dfc:anvil/${metal}_sheet` })
     event.remove({ id: `dfc:welding/${metal}_double_sheet` })
